@@ -15,7 +15,7 @@ public class TresApp {
 	}
 	
 	public static boolean esPrimo (int num) {
-		for (int i = num; i > 0 ; i--) {
+		for (int i = 1; i <= num ; i++) {
 			if(i != num && i != 1 && num % i == 0) {
 				primo = false;
 				break;
