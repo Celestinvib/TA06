@@ -1,12 +1,11 @@
 import javax.swing.JOptionPane;
 
 public class TresApp {
-	public static boolean primo = true;
 
 	public static void main(String[] args) {
 		
 		int num = Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce un número para averiguar si es primo:"));
-		  primo = esPrimo(num); 
+		  boolean primo = esPrimo(num); 
 		  if(primo) {
 			  JOptionPane.showMessageDialog(null,num+ " es un número primo");
 		  }else {
@@ -15,6 +14,7 @@ public class TresApp {
 	}
 	
 	public static boolean esPrimo (int num) {
+		boolean primo = true;
 		for (int i = 1; i <= num ; i++) {
 			if(i != num && i != 1 && num % i == 0) {
 				primo = false;
